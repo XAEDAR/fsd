@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Get Current Position</title>
+</head>
+
+<body>
+	<h2>Welcome To GFG</h2>
+	<div>
+		<button onclick="geolocator()">click me</button>
+		<p id="paraGraph"></p>
+
+	</div>
+	<script>
+		var paraGraph = document.getElementById("paraGraph");
+		var user_loc = navigator.geolocation;
+	
+		function geolocator() {
+			if(user_loc) {
+				user_loc.getCurrentPosition(success);
+			} else {
+				"Your browser doesn't support geolocation API";
+			}
+		}
+	
+		function success(data) {
+			var lat = data.coords.latitude;
+			var long = data.coords.longitude;
+			paraGraph.innerHTML = "Latitude: "
+			+ lat
+			+ "<br>Longitude: "
+			+ long;
+		}
+	</script>
+</body>
+
+</html>

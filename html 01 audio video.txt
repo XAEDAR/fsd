@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRACTICAL OF EMBEDDING SONG</title>
+</head>
+<body>
+<h2>PRACTICAL OF EMBEDDING SONG</h2>
+<audio src="./Radha khovai .mp3" controls></audio>
+
+
+<h2>Click play button to play video</h2>
+<video src="./Your paragraph text.mp4" controls></video>
+
+</body>
+</html>
